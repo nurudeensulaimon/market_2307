@@ -3,10 +3,10 @@ attr_reader :name,
             :price
   def initialize(fruit)
     @name = fruit[:name]
-    @price = fruit[:price]
+    @price = format_price(fruit[:price])
   end 
 
   def format_price(money)
-    money.delete("$").to_i
+    money.gsub("$", "").to_f
   end 
 end
