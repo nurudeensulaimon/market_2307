@@ -54,12 +54,12 @@ pry(main)> vendor.inventory
 pry(main)> vendor.check_stock(item1)
 #=> 0
 
-pry(main)> vendor.stock(item1, 30)
+pry(main)> = 
 
 pry(main)> vendor.inventory
 #=> {#<Item:0x007f9c56740d48...> => 30}
 
-pry(main)> vendor.check_stock(item1)
+pry(main)> vendor.check_stock(item1) 
 #=> 30
 
 pry(main)> vendor.stock(item1, 25)
